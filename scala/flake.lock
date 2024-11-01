@@ -1,0 +1,43 @@
+{
+  "nodes": {
+    "niksi-devcontainer": {
+      "locked": {
+        "lastModified": 1730472491,
+        "narHash": "sha256-UEYLBQjdN/DNrLJ7ECCnckGSCyxCRgr5HO4LSEfuEo4=",
+        "ref": "refs/heads/main",
+        "rev": "c16eafdcb6ab8b7f8599091ed383f6bcb25f06f9",
+        "revCount": 2,
+        "type": "git",
+        "url": "ssh://git@version.aalto.fi/niksi/niksi-devcontainer"
+      },
+      "original": {
+        "type": "git",
+        "url": "ssh://git@version.aalto.fi/niksi/niksi-devcontainer"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1730327045,
+        "narHash": "sha256-xKel5kd1AbExymxoIfQ7pgcX6hjw9jCgbiBjiUfSVJ8=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "080166c15633801df010977d9d7474b4a6c549d7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-24.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "niksi-devcontainer": "niksi-devcontainer",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
