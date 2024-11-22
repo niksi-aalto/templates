@@ -20,17 +20,17 @@
     },
     "niksi-devcontainer": {
       "locked": {
-        "lastModified": 1730472491,
-        "narHash": "sha256-UEYLBQjdN/DNrLJ7ECCnckGSCyxCRgr5HO4LSEfuEo4=",
-        "ref": "refs/heads/main",
-        "rev": "c16eafdcb6ab8b7f8599091ed383f6bcb25f06f9",
-        "revCount": 2,
-        "type": "git",
-        "url": "ssh://git@version.aalto.fi/niksi/niksi-devcontainer"
+        "lastModified": 1732276166,
+        "narHash": "sha256-MxxE77WaLMNWGWA5jb0czUYzgTZprr2exclh3KDWobw=",
+        "owner": "niksi-aalto",
+        "repo": "niksi-devcontainer",
+        "rev": "3ea3d0fd46afce3a4b2c42fa5d84c714fb02c968",
+        "type": "github"
       },
       "original": {
-        "type": "git",
-        "url": "ssh://git@version.aalto.fi/niksi/niksi-devcontainer"
+        "owner": "niksi-aalto",
+        "repo": "niksi-devcontainer",
+        "type": "github"
       }
     },
     "nixpkgs": {

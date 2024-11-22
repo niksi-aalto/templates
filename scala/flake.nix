@@ -3,7 +3,7 @@
 
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
   inputs.flake-utils.url = "github:numtide/flake-utils";
-  inputs.niksi-devcontainer.url = "git+ssh://git@version.aalto.fi/niksi/niksi-devcontainer";
+  inputs.niksi-devcontainer.url = "github:niksi-aalto/niksi-devcontainer";
 
   outputs = {
     nixpkgs,
