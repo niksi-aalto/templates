@@ -20,11 +20,11 @@
     },
     "niksi-devcontainer": {
       "locked": {
-        "lastModified": 1732276166,
-        "narHash": "sha256-MxxE77WaLMNWGWA5jb0czUYzgTZprr2exclh3KDWobw=",
+        "lastModified": 1732876858,
+        "narHash": "sha256-NwoeLNm74CiPYkwg3Rh2L6WowD4mNGEZLf0qcRfgvu4=",
         "owner": "niksi-aalto",
         "repo": "niksi-devcontainer",
-        "rev": "3ea3d0fd46afce3a4b2c42fa5d84c714fb02c968",
+        "rev": "69b21594138705d7521665c7e4278360bba1cbba",
         "type": "github"
       },
       "original": {
@@ -35,11 +35,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1731797254,
-        "narHash": "sha256-df3dJApLPhd11AlueuoN0Q4fHo/hagP75LlM5K1sz9g=",
+        "lastModified": 1732749044,
+        "narHash": "sha256-T38FQOg0BV5M8FN1712fovzNakSOENEYs+CSkg31C9Y=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "e8c38b73aeb218e27163376a2d617e61a2ad9b59",
+        "rev": "0c5b4ecbed5b155b705336aa96d878e55acd8685",
         "type": "github"
       },
       "original": {

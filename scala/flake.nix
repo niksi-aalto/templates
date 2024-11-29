@@ -14,13 +14,12 @@
     flake-utils.lib.eachDefaultSystem (
       system: let
         pkgs = nixpkgs.legacyPackages.${system};
-        paths = pkgs.lib.optional (builtins.pathExists ./paths.nix) (builtins.head (import ./paths.nix {inherit pkgs;}));
+        overrides = pkgs.lib.optional (builtins.pathExists ./overrides.nix) (import ./overrides.nix {inherit pkgs;});
       in {
-        packages.default = niksi-devcontainer.lib.mkDevcontainer {
-          inherit pkgs;
-          name = "scala";
-          paths = with pkgs;
-            [
+        packages.default = niksi-devcontainer.lib.mkDevcontainer ({
+            inherit pkgs;
+            name = "scala";
+            paths = with pkgs; [
               bash
               coreutils-full
               scala_3
@@ -34,9 +33,9 @@
               xorg.libX11
               xorg.libXext
               xorg.libXtst
-            ]
-            ++ paths;
-        };
+            ];
+          }
+          // (pkgs.lib.mergeAttrsList overrides));
       }
     );
 }

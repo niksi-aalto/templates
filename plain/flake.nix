@@ -14,13 +14,13 @@
     flake-utils.lib.eachDefaultSystem (
       system: let
         pkgs = nixpkgs.legacyPackages.${system};
-        paths = pkgs.lib.optional (builtins.pathExists ./paths.nix) (builtins.head (import ./paths.nix {inherit pkgs;}));
+        overrides = pkgs.lib.optional (builtins.pathExists ./overrides.nix) (import ./overrides.nix {inherit pkgs;});
       in {
-        packages.default = niksi-devcontainer.lib.mkDevcontainer {
-          inherit pkgs;
-          name = "plain";
-          paths = paths;
-        };
+        packages.default = niksi-devcontainer.lib.mkDevcontainer ({
+            inherit pkgs;
+            name = "plain";
+          }
+          // (pkgs.lib.mergeAttrsList overrides));
       }
     );
 }
