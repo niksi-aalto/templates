@@ -16,8 +16,7 @@
         pkgs = nixpkgs.legacyPackages.${system};
         overrides = pkgs.lib.mergeAttrsList (pkgs.lib.optional (builtins.pathExists ./overrides.nix) (import ./overrides.nix {inherit pkgs;}));
       in {
-        packages.default =
-          niksi-devcontainer.lib.mkDevcontainer {
+        packages.default = niksi-devcontainer.lib.mkDevcontainer ({
             inherit pkgs;
             name = "scala";
             paths = with pkgs;
@@ -37,7 +36,7 @@
               ]
               ++ overrides.paths or [];
           }
-          // pkgs.lib.filterAttrs (n: _: n != "paths") overrides;
+          // pkgs.lib.filterAttrs (n: _: n != "paths") overrides);
       }
     );
 }
