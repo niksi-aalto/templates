@@ -23,14 +23,13 @@
             paths = with pkgs;
               [
                 bash
-                coreutils-full
-                scala_3
+                coreutils
                 git
                 sbt
                 metals
                 bloop
                 coursier
-                jdk
+                jre_minimal
 
                 xorg.libX11
                 xorg.libXext
