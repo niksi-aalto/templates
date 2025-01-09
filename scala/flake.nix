@@ -28,7 +28,7 @@
                 metals
                 bloop
                 coursier
-                jre_minimal
+                jdk
 
                 xorg.libX11
                 xorg.libXext
