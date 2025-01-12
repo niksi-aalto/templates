@@ -20,11 +20,11 @@
     },
     "niksi-devcontainer": {
       "locked": {
-        "lastModified": 1732876858,
-        "narHash": "sha256-NwoeLNm74CiPYkwg3Rh2L6WowD4mNGEZLf0qcRfgvu4=",
+        "lastModified": 1736515882,
+        "narHash": "sha256-cenBxMLjEmEZ1sM1cFLVqCcU8zbGM1IemBa+cWdMvbU=",
         "owner": "niksi-aalto",
         "repo": "niksi-devcontainer",
-        "rev": "69b21594138705d7521665c7e4278360bba1cbba",
+        "rev": "a7d52c4967554cf2a6887a4b84a610184f34af97",
         "type": "github"
       },
       "original": {
@@ -35,16 +35,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1732749044,
-        "narHash": "sha256-T38FQOg0BV5M8FN1712fovzNakSOENEYs+CSkg31C9Y=",
+        "lastModified": 1736549401,
+        "narHash": "sha256-ibkQrMHxF/7TqAYcQE+tOnIsSEzXmMegzyBWza6uHKM=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "0c5b4ecbed5b155b705336aa96d878e55acd8685",
+        "rev": "1dab772dd4a68a7bba5d9460685547ff8e17d899",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixos-24.05",
+        "ref": "nixos-24.11",
         "repo": "nixpkgs",
         "type": "github"
       }
